@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis cursos</title>
+</head>
+
+<body>
+    <h1>{{title}}</h1>
+    <ul>
+        {{#each cursos}}
+        <li>{{this}}</li>
+        {{/each}}
+
+    </ul>
+
+    <h1>Para inscribirse en un curso ingresa el siguiente comando en la terminal:</h1>
+    <h2>node app inscribir --id=valor --name=valor --cedula=valor</h2><br>
+    <h1>Para ver el resultado de la inscripcion puedes ingresar a cualquiera de las siguientes direcciones:</h1>
+    <ul>
+        <li>
+            <a href="http://localhost:3000/inscripciones">localhost:3000/inscripciones</a><br>
+        </li>
+        <li>
+            <a href="http://127.0.0.1:3000/inscripciones">127.0.0.1:3000/inscripciones</a>
+        </li>
+    </ul>
+
+</body>
+
+</html>
